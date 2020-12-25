@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arpan KC",
   "license": "ISC",
   "dependencies": {
     "@stonksjs/quote": "^1.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "serverless-http": "^2.6.0"
   }
 }

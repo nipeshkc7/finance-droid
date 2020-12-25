@@ -1,3 +1,4 @@
+const serverless = require('serverless-http');
 const express = require('express');
 const quote = require('@stonksjs/quote');
 
@@ -27,3 +28,5 @@ const port = process.env.PORT || 8080;
 app.listen(port, ()=>{
   console.log(`App listening on port: ${port}`);
 })
+
+module.exports.handler = serverless(app);
